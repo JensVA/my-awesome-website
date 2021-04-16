@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(247, 247, 242);
+  width: 60%;
+  margin-left: 20%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-left: 0;
+}
+
+.title {
+  margin: auto;
+  margin-left: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  color: rgb(216, 107, 52);
+  font-weight: bold;
+}
+
+.options {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.options p {
+  margin: 0;
+  background-color: rgb(249, 158, 88);
+  border: 2px solid rgb(216, 107, 52);
+  border-radius: 12px;
+  padding: 10px;
+  color: rgb(0, 140, 186);
+  font-weight: bold;
+  height: 20px;
+}
+
+.select_buttons button{
+  border-width: 5px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  height: 30px;
+}
+
+.buttons button {
+  border-width: 5px;
+  border-radius: 12px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  width: 90px;
+}
+
+.block1 input{
+  background-color: white;
+  height: 30px;
+  width: 100px;
+  padding: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.select_buttons input{
+  background-color: white;
+  height: 30px;
+  width: 100px;
+  padding: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.block1 {
+  padding: 10px 5px 10px 5px;
+}
+
+.block2 {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+p.subtitle {
+  font-size: 25px;
+  color: rgb(103, 134, 154);
+  font-weight: bold;
+  margin: 0;
+}
+
+img{
+  margin-top: 10px;
+}
+
+p.subtext {
+  font-size: 20px;
+  margin: 5;
+  margin-bottom: 0;
+}
+
+table {
+  background-color: white;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 20px;
+}
+
+th {
+  background-color: rgb(183, 198, 218);
+}
+
+tr:first-child th {
+  background-color: rgb(183, 198, 218);
+  padding: 10px;
+}
+
+tr th:first-child {
+  background-color: rgb(183, 198, 218);
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  text-align: center;
+}
+
+td.red {
+  background-color: rgb(255, 199, 194);
+  color: rgb(171, 35, 30);
+}

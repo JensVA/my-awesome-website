@@ -4,12 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Javascript</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="body">
-  <h1 id="someText">Hallo</h1>
-  <button id="knop" onclick="myFunction()">Hallo</button>
+  <header>
+    <div class="title">
+        Javascript demo page
+    </div>
+  </header>
+  <section>
+    <div class="blocks">
+        <div class="block1">
+            <p class="subtitle">Change the background color</p>
+            <p class="subtext">Feel free to change the background color by pressing one of these buttons.</p>
+            <div class="buttons">
+              <button id="button_beige" style="background-color: rgb(247, 247, 242);" onclick="backgroundBeige()">beige</button>
+              <button id="button_red" style="background-color: red;" onclick="backgroundRed()">red</button>
+              <button id="button_green" style="background-color: green;" onclick="backgroundGreen()">green</button>
+              <button id="button_blue" style="background-color: lightskyblue;" onclick="backgroundBlue()">blue</button>
+            </div>
+            <div class="select_buttons">
+              <p class="subtext"> You can even select the background color yourself down below.</p>
+              <input id="input_color" type="color">
+              <button id="select_color" onclick="backgroundSelected()">Select</button>
+              <p class="subtext"> Or you can type your own RGB values (0 to 255) manually over here.</p>
+              <div class="inputs">
+                <input id="input_R" type="number" placeholder="R">
+                <input id="input_G" type="number" placeholder="G">
+                <input id="input_B" type="number" placeholder="B">
+                <button id="manual_color" onclick="backgroundManual()">Select</button>
+              </div>
+            </div>
+        </div>
+        <hr />
+        <div class="block2">
+            <p class="subtitle">Changing picture</p>
+            <p class="subtext"></p>
+            <p class="subtext">By pressing following button, a new random image with your own width and height will be displayed.</p>
+            <div class="select_buttons">
+              <input id="width" type="number" placeholder="Width">
+              <input id="height" type="number" placeholder="Height">
+              <button id="randomimage" onclick="randomImage()">Random image</button>
+              <button id="resetimage" onclick="resetImage()">Reset image</button>
+            </div>
+            <img id="randomimage_pic" src="https://picsum.photos/300/200?random=1" alt="Random image">
+        </div>
+    </div>
+  </section>
+  <footer>
 
+  </footer>
   <script src="home.js"></script>
 </body>
 </html>
