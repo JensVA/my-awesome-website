@@ -12,11 +12,12 @@
     <div class="title">
         Javascript demo page
     </div>
+    <h2>Made by Jens Vanhove</h2>
   </header>
   <section>
     <div class="blocks">
         <div class="block1">
-            <p class="subtitle">Change the background color</p>
+            <p class="subtitle">Changing the background color</p>
             <p class="subtext">Feel free to change the background color by pressing one of these buttons.</p>
             <div class="buttons">
               <button id="button_beige" style="background-color: rgb(247, 247, 242);" onclick="backgroundBeige()">beige</button>
@@ -40,8 +41,7 @@
         <hr />
         <div class="block2">
             <p class="subtitle">Changing picture</p>
-            <p class="subtext"></p>
-            <p class="subtext">By pressing following button, a new random image with your own width and height will be displayed.</p>
+            <p class="subtext">By pressing following buttons, a new random image with your own width and height will be displayed.</p>
             <div class="select_buttons">
               <input id="width" type="number" placeholder="Width">
               <input id="height" type="number" placeholder="Height">
@@ -50,11 +50,31 @@
             </div>
             <img id="randomimage_pic" src="https://picsum.photos/300/200?random=1" alt="Random image">
         </div>
+        <hr />
+        <div class="block3">
+          <p class="subtitle">Popup message</p>
+          <p class="subtext">By pressing the button down below, a random popup message will be displayed.</p>
+          <div class="select_buttons">
+            <button id="popup" onclick="popupMessage()">Popup message</button>
+          </div>
+          <p></p>
+        </div>
+        <hr />
+        <div class="block4">
+          <p class="subtitle">Creating a picture</p>
+          <p class="subtext">By pressing the button down below after filling in your name, you're able to put your name in the picture.</p>
+          <div class="select_buttons">
+            <input id="inputtext" type="text" placeholder="Your name">
+            <button id="changepicture" onclick="changePicture()">Change picture</button>
+          </div>
+          <img id="randomimage_name" src="https://via.placeholder.com/1000x300/007ACC/FFFFFF?text=Yourname" alt="Random image">
+          <p></p>
+        </div>
+        <hr />
+        <p class="subtext"> You can do so much more with JavaScript, the posibilities are almost endless!</p>
+        <p class="end"> I hope you enjoyed playing around with this demo page.</p>
     </div>
   </section>
-  <footer>
-
-  </footer>
   <script src="home.js"></script>
 </body>
 </html>

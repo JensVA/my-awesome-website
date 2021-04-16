@@ -38,3 +38,15 @@ function resetImage(){
   document.getElementById("randomimage_pic").src= "https://picsum.photos/300/200?random=" + randomimage;
   randomimage++;
 }
+
+function popupMessage(){
+  window.alert("This is a popup message");
+}
+
+function changePicture(){
+  var text = document.getElementById("inputtext").value;
+  if(text == null){
+    text = "Yourname";
+  }
+  document.getElementById("randomimage_name").src= "https://via.placeholder.com/1000x300/007ACC/FFFFFF?text=" + text;
+}

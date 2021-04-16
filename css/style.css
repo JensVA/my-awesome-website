@@ -13,6 +13,16 @@ body {
   margin-left: 20%;
 }
 
+h2{
+  color: rgb(216, 107, 52);
+  font-weight: bold;
+}
+
+hr{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -137,4 +147,10 @@ td {
 td.red {
   background-color: rgb(255, 199, 194);
   color: rgb(171, 35, 30);
+}
+
+p.end{
+  font-size: 20px;
+  margin: 5;
+  margin-bottom: 50px;
 }
